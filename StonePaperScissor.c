@@ -2,7 +2,7 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
-
+//Harsh Shrivastava
 int main()
 {
     int hihi;
