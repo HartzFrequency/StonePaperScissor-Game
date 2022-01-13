@@ -29,7 +29,7 @@ int main()
         {
         case 'a': // human choice stone
         case 'A': // human choice stone
-                  // Generating random number between 0 to 8 increasing range to increase different output probabilities
+                  // Generating random number between 0 to 17 increasing range to increase different output probabilities
             srand(time(NULL));
             hihi = rand() % 17;
             // printf("%d\n", hihi);
@@ -59,9 +59,9 @@ int main()
             break;
         case 'b': // human choice paper
         case 'B': // human choice paper
-            // Generating random number between 0 to 8 increasing range to increase different output probabilities
+            // Generating random number between 0 to 17 increasing range to increase different output probabilities
             srand(time(NULL));
-            hihi = rand() % 8;
+            hihi = rand() % 17;
             //printf("%d\n", hihi);
             printf("\n");
             if (hihi == 2 || hihi == 7 || hihi == 5 || hihi == 11 || hihi == 15 || hihi == 16)
@@ -88,9 +88,9 @@ int main()
             break;
         case 'C': // human choice scissor
         case 'c': // human choice scissor
-            // Generating random number between 0 to 8 increasing range to increase different output probabilities
+            // Generating random number between 0 to 17 increasing range to increase different output probabilities
             srand(time(NULL));
-            hihi = rand() % 8;
+            hihi = rand() % 17;
             //printf("%d\n", hihi);
             printf("\n");    
             if (hihi == 2 || hihi == 7 || hihi == 5 || hihi == 11 || hihi == 15 || hihi == 16)
