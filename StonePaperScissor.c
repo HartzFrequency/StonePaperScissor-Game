@@ -62,7 +62,8 @@ int main()
             // Generating random number between 0 to 8 increasing range to increase different output probabilities
             srand(time(NULL));
             hihi = rand() % 8;
-            printf("%d\n", hihi);
+            //printf("%d\n", hihi);
+            printf("\n");
             if (hihi == 2 || hihi == 7 || hihi == 5 || hihi == 11 || hihi == 15 || hihi == 16)
             {
                 printf("Computer chooses \"stone\"\n");
@@ -90,7 +91,8 @@ int main()
             // Generating random number between 0 to 8 increasing range to increase different output probabilities
             srand(time(NULL));
             hihi = rand() % 8;
-            printf("%d\n", hihi);
+            //printf("%d\n", hihi);
+            printf("\n");    
             if (hihi == 2 || hihi == 7 || hihi == 5 || hihi == 11 || hihi == 15 || hihi == 16)
             {
                 printf("Computer chooses \"stone\"\n");
