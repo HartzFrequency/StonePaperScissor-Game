@@ -7,11 +7,12 @@ int main()
 {
     int hihi;
     int score[3];
-    char choice;
+    int choice;
     int re;
     printf("\"Welcome To Stone Paper Scissor Game\"\n");
     printf("RULES-1)Match will going to be a best of three\n      2)Enter choice as option\n      3)result will be displayed at end\n");
     printf("      4)won,tie,loose give you score 1,0,-1\n");
+    rematch:
     for (int i = 0; i < 3; i++)
     {
     
@@ -22,13 +23,12 @@ int main()
         fflush(stdin);
         printf("choose one out of A)stone B)paper C)scissor\n");
         printf("Enter your choice as a,b,c-  ");
-        scanf("%c", &choice);
+        scanf("%d", &choice);
 
         // for human choice
         switch (choice)
         {
-        case 'a': // human choice stone
-        case 'A': // human choice stone
+         case 1: // human choice stone
                   // Generating random number between 0 to 17 increasing range to increase different output probabilities
             srand(time(NULL));
             hihi = rand() % 17;
@@ -57,8 +57,7 @@ int main()
             }
 
             break;
-        case 'b': // human choice paper
-        case 'B': // human choice paper
+        case 2: // human choice paper
             // Generating random number between 0 to 17 increasing range to increase different output probabilities
             srand(time(NULL));
             hihi = rand() % 17;
@@ -86,8 +85,7 @@ int main()
                 score[i] = -1;
             }
             break;
-        case 'C': // human choice scissor
-        case 'c': // human choice scissor
+        case 3: // human choice scissor
             // Generating random number between 0 to 17 increasing range to increase different output probabilities
             srand(time(NULL));
             hihi = rand() % 17;
@@ -124,5 +122,21 @@ int main()
     printf("\n");
     printf("Match over your final score is %d out of 3\n", score[0] + score[1] + score[2]);
     printf("wanna have a rematch\n");
+    correct:
+    printf("1)yes 0)no\n");
+    scanf("%d", &re);
+    if (re == 1)
+    {
+        goto rematch;
+    }
+    else if (re == 0)
+    {
+        exit(1);
+    }
+    else
+    {
+        printf("Choose correct option\n");
+        goto correct;
+    }
     return 0;
 }
