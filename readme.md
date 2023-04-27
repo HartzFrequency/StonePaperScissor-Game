@@ -7,7 +7,7 @@ StonePaperScissor-Game is a simple command-line interface game implemented in C.
 To run the game, you need to have a C compiler installed on your machine, such as GCC or Clang. Once you have installed a C compiler, you can download the code from the GitHub repository and compile it in your terminal or command prompt by navigating to the directory where you saved the code and typing the following command:
 
 ```
-gcc -o game game.c
+gcc -o game StonePaperScissor.c
 ```
 
 The game will then be compiled, and you can run it by typing the following command:
